@@ -1,0 +1,33 @@
+#page-loading-cover {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background: #ffffff;
+    z-index: 99999;
+}
+
+.some-img-wrapper {
+    height: 500px;
+    width: 300px;
+}
+
+.some-img {
+    position: relative;
+    display: block;
+    visibility: collapse;
+    height: 0;
+    width: calc(100% + 60px);
+    left: -60px;
+    background-position: center;
+    background-size: cover;
+}
+
+.some-stagger {
+    position: relative;
+    opacity: 0;
+    top: 15px;
+}

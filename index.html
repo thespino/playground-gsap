@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GSAP Playground</title>
+    <link rel="shortcut icon" href="/img/thespino-bg-color@0.1x.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"
+    >
+
+    <link rel="stylesheet" href="/index.css">
+
+</head>
+
+<body>
+
+    <main id="main" class="container py-3">
+
+        <article>
+            <h1>Worst <strong>GSAP</strong> playground ever</h1>
+
+            <p id="some-text-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Mollitia error tempore, odio incidunt sint eaque dicta
+                iure deserunt dolore quam? Ratione nesciunt amet mollitia
+                placeat inventore maxime similique quas iure!
+            </p>
+
+
+            <h3 class="mb-3">An hugly vertical carousel</h2>
+
+            <div class="some-img-wrapper overflow-hidden">
+                <div 
+                    id="some-img-1" 
+                    class="some-img"
+                    style="background-image: url('/img/unsplash-dsB1IkggZdw.jpg');"
+                ></div>
+                <div 
+                    id="some-img-2" 
+                    class="some-img"
+                    style="background-image: url('/img/unsplash-Mk57Akj16kk.jpg');"
+                ></div>
+                <div 
+                    id="some-img-3" 
+                    class="some-img"
+                    style="background-image: url('/img/unsplash-TmdC5EEXp7o.jpg');"
+                ></div>
+            </div>
+
+
+            <div class="mt-5">
+                <h3 class="mb-3">Some <strong>stagger</strong>, because it's nice</h3>
+                <p>
+                    Couldn't see? Click here
+                    <button class="btn btn-sm btn-primary" onclick="stagger();">Stagger</button>
+                </p>
+                <ul id="#some-stagger" class="list-unstyled display-6">
+                    <li class="some-stagger">👋</li>
+                    <li class="some-stagger">🤘</li>
+                    <li class="some-stagger">🤙</li>
+                    <li class="some-stagger">👊</li>
+                    <li class="some-stagger">👏</li>
+                    <li class="some-stagger">✍</li>
+                    <li class="some-stagger">💪</li>
+                    <li class="some-stagger">🖕</li>
+                </ul>
+            </div>
+
+
+            <h3 class="mt-5 mb-3">Want some <strong>ScrollTrigger</strong>?</h3>
+            <a href="/scrolltrigger">Goto scrolltrigger</a>
+
+        </article>
+
+
+
+        <footer class="footer mt-5">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Credits</h4>
+                    <ul class="card-text">
+                        <li>
+                            <a href="https://unsplash.com/photos/dsB1IkggZdw">https://unsplash.com/photos/dsB1IkggZdw</a>
+                        </li>
+                        <li>
+                            <a href="https://unsplash.com/photos/Mk57Akj16kk">https://unsplash.com/photos/Mk57Akj16kk</a>
+                        </li>
+                        <li>
+                            <a href="https://unsplash.com/photos/TmdC5EEXp7o">https://unsplash.com/photos/TmdC5EEXp7o</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <footer class="bg-body-secondary px-4 py-2 small">
+        Crafted with ❤️ by <a href="https://github.com/thespino" target="_blank" rel="noopener noreferrer">thespino</a>
+    </footer>
+
+
+    <main id="page-loading-cover">
+        <div class="d-flex w-100 h-100 justify-content-center align-items-center">
+            <div id="page-loading-text">Please wait...</div>
+        </div>
+    </main>
+
+
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+    <script src="/index.js"></script>
+</body>
+
+</html>
